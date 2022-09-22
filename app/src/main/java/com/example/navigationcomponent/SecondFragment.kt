@@ -1,11 +1,16 @@
 package com.example.navigationcomponent
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.findFragment
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.navArgs
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,6 +23,8 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class SecondFragment : Fragment() {
+
+    val args: SecondFragmentArgs by navArgs()
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +42,11 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_second, container, false)
+        var view = inflater.inflate(R.layout.fragment_second, container, false)
+        // grab the argument passed from the first fragment and display it in the second fragments tv
+        view.findViewById<TextView>(R.id.textView2).text = args.number.toString()
+        //Log.i(TAG, "view = " + view.find)
+        // set an onclick listener that will bring us back to the first fragment
         view.setOnClickListener { Navigation.findNavController(view).navigate(R.id.toFirstFragment)}
 
         return view

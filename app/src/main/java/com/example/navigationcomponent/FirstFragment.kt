@@ -1,6 +1,8 @@
 package com.example.navigationcomponent
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -41,7 +43,12 @@ class FirstFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_first, container, false)
-        view.setOnClickListener { Navigation.findNavController(view).navigate(R.id.toSecondFragment)}
+
+        // set an onclick listener that will send us to the second fragment with an action argument
+        view.setOnClickListener {
+            val action = FirstFragmentDirections.toSecondFragment()
+            action.number = 12
+            Navigation.findNavController(view).navigate(action)}
 
         return view
     }
