@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent (IMPORTANT FOR NAVIGATING BETWEEN FRAGMENTS)/app/src/main/res/layout/activity_main.xml" value="0.4230072463768116" />
+        <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent (IMPORTANT FOR NAVIGATING BETWEEN FRAGMENTS)/app/src/main/res/layout/fragment_second.xml" value="0.4230072463768116" />
+        <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent (IMPORTANT FOR NAVIGATING BETWEEN FRAGMENTS)/app/src/main/res/menu/drawer_menu.xml" value="0.5546875" />
         <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent/app/src/main/res/layout/activity_main.xml" value="0.5158514492753623" />
         <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent/app/src/main/res/layout/fragment_first.xml" value="0.5158514492753623" />
         <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent/app/src/main/res/layout/fragment_second.xml" value="0.5158514492753623" />
+        <entry key="..\:/Users/960151/AndroidStudioProjects/NavigationComponent/app/src/main/res/menu/drawer_menu.xml" value="0.5" />
       </map>
     </option>
   </component>

@@ -47,6 +47,7 @@ class FirstFragment : Fragment() {
         // set an onclick listener that will send us to the second fragment with an action argument
         view.setOnClickListener {
             val action = FirstFragmentDirections.toSecondFragment()
+            Log.i(TAG, "action type = " + action::class.simpleName)
             action.number = 12
             Navigation.findNavController(view).navigate(action)}
 
